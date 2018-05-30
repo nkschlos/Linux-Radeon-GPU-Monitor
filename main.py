@@ -1,25 +1,21 @@
-#!/home/noah/PycharmProjects/GPUMonitor/venv/bin/python3
-
 '''
-This program is a simple tool for monitoring the GPU usage for Radeon GPUs on linux systems.
-At the time of my writing this, I could only find one tool to do this, radeontop, and it runs in the terminal and isn't pretty.
-This program runs radeontop and tells it to continually dump the data to a text file, then reads the text file and plots the results with matplotlib.
+Linux-Radeon-GPU-Monitor
+A simple GPU resource monitor for Radeon devices on Linux using Python
 
 The dependencies for this program are radeontop installed on your linux distro
 and matplotlib, numpy, time, io, re, and os installed on python.
 
 To customize this for your build, you will want to
 
-1. make sure the os.system commands will run. I have my distro set up to not prompt for password for "sudo," so this works for me.
-   you may need to remove the "sudo" from these commands and run python as root. Radeontop, rm, and pkill all require permissions.
-2. customize it to your liking by adjusting the matplotlib settings ( ͡° ͜ʖ ͡°)
-   there is a lot more information stored in data you could plot, but I was only interested in GPU and VRAM usage.
-   open data.txt in a file editor to see what is available.
+1. Make sure the os.system commands will run. I have my distro set up to not prompt for password for "sudo," so this works for me.
+   You may need to remove the "sudo" from these commands and run python as root. Radeontop, rm, and pkill all require permissions.
+2. Customize it to your liking by adjusting the matplotlib settings.
+   There is a lot more information stored in data you could plot, but I was only interested in GPU and VRAM usage.
+   Open data.txt in a file editor to see what is available.
 
 I don't claim for this to be stable and well-fleshed out, as I am not really a programmer.
 It's a simple tool that I wrote because I wanted it and you might like it as well.
-
-Enjoy,
+Enjoy
 Noah Schlossberger
 May 2018
 '''
@@ -106,7 +102,7 @@ def animate(i):
     ax.spines['bottom'].set_color('#777777')
     ax.spines['left'].set_color('#777777')
     ax.spines['right'].set_color('#777777')
-    ax.set_ylim(0,100)
+    ax.set_ylim(0,100) #set scale absolute, remove for autoscale
 
     #plot vram usage
 
@@ -121,6 +117,7 @@ def animate(i):
     ax2.spines['bottom'].set_color('#777777')
     ax2.spines['left'].set_color('#777777')
     ax2.spines['right'].set_color('#777777')
+    ax2.set_ylim(0,100) #set scale absolute, remove for autoscale
 
 #initalize animation
 ani = animation.FuncAnimation(fig,animate,interval=1000)
