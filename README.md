@@ -16,8 +16,8 @@ To customize this for your build, you will want to
    there is a lot more information stored in data you could plot, but I was only interested in GPU and VRAM usage.
    open data.txt in a file editor to see what is available.
 
-I don't claim for this to be stable and well-fleshed out, as I am not really a programmer.
-It's a simple tool that I wrote because I wanted it and you might like it as well.
+I don't claim for this to be stable, fleshed-out, or concise, as I am not really a programmer.
+It's a simple tool that I wrote because I wanted it, and you might like it as well.
 
 Enjoy,
 Noah Schlossberger
