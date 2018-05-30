@@ -35,12 +35,10 @@ import matplotlib as mpl
 os.system("sudo pkill radeontop")
 #  set path as current location for data file that radeontop writes
 dir_path = os.path.dirname(os.path.realpath(__file__))
-print(dir_path)
 path = dir_path + "/data.txt"
-print(path)
 path_open= path.replace('/','\\')
 # delete file if already exists
-os.system("sudo rm " + path)
+os.system("sudo rm " + path + " -f")
 # start radeontop and dump data to file
 os.system("sudo radeontop -d " + path + " &")
 # wait two seconds to make sure entries exist before we read them
