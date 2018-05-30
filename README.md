@@ -5,6 +5,9 @@ This program is a simple tool for monitoring the GPU usage for Radeon GPUs on li
 At the time of my writing this, I could only find one tool to do this, radeontop, and it runs in the terminal and isn't pretty.
 This program runs radeontop and tells it to continually dump the data to a text file, then reads the text file and plots the results with matplotlib.
 
+![alt text](https://github.com/nkschlos/Linux-Radeon-GPU-Monitor/blob/master/GPU%20monitor.png?raw=true)
+Here is a screenshot of the monitor (left) running next to the system monitor's resource tab on gnome.
+
 The dependencies for this program are radeontop installed on your linux distro
 and matplotlib, numpy, time, io, re, and os installed on python.
 
