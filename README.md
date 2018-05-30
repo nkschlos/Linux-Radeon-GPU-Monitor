@@ -6,7 +6,7 @@ At the time of my writing this, I could only find one tool to display this info,
 This program runs radeontop, but instead of displaying the info graphically, it tells it to continually dump the data to a text file, then reads the text file and plots the results with matplotlib.
 
 ![alt text](https://github.com/nkschlos/Linux-Radeon-GPU-Monitor/blob/master/GPU%20monitor.png?raw=true)
-Here is a screenshot of the monitor (left) running next to the system monitor's resource tab on gnome.
+Here is a screenshot of the monitor (left) running next to the system monitor's resource tab on gnome (right).
 
 The dependencies for this program are radeontop installed on your linux distro
 and matplotlib, numpy, time, io, re, and os installed on python.
