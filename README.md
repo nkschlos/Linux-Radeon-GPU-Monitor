@@ -19,7 +19,7 @@ To customize this for your build, you will want to
    There is a lot more information stored in data you could plot, but I was only interested in GPU and VRAM usage.
    Open data.txt in a file editor to see what is available.
 
-* Scaling: absolute vs. autoscale:
+*Scaling:* absolute vs. autoscale:
    * The scaling is by default absolute scaled, but you can make it autoscaled by removing lines 105 and 120
    * As for the horizontal scale, it is by default a rolling time scale, logging one minute. If you want it to cumulitively show all the data collected, delete lines 83 and 84.
 
