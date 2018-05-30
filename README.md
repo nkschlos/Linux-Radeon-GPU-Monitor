@@ -14,10 +14,10 @@ and matplotlib, numpy, time, io, re, and os installed on python.
 To customize this for your build, you will want to
 
 1. make sure the os.system commands will run. I have my distro set up to not prompt for password for "sudo," so this works for me.
-   you may need to remove the "sudo" from these commands and run python as root. Radeontop, rm, and pkill all require permissions.
+   you may need to remove the "sudo" from these commands and run python as root. 'Radeontop', 'rm', and 'pkill' all require permissions.
 2. customize it to your liking by adjusting the matplotlib settings. 
    There is a lot more information stored in data you could plot, but I was only interested in GPU and VRAM usage.
-   open data.txt in a file editor to see what is available.
+   Open data.txt in a file editor to see what is available.
 
 I don't claim for this to be stable, fleshed-out, or concise, as I am not really a programmer.
 It's a simple tool that I wrote because I wanted it, and you might like it as well.
